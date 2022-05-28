@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ripple"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="5dp"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:background="@drawable/background_round_white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/holder"
+            android:layout_marginRight="@dimen/spacing_small" />
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/photo"
+            android:stretchColumns="*"
+            android:layout_marginLeft="1dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/label_community_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/label_geographical"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/community_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:id="@+id/geographical_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_column="0"
+                    android:text="@string/label_accessibility"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/label_distance_ecom"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/accessibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginEnd="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:id="@+id/distance_ecom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="@string/label_connected_ecg"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/label_license_date"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/connected_ecg"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:id="@+id/license_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_column="0"
+                    android:text="@string/label_longitude"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="@string/label_latitude"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_extra_small"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="@dimen/ts"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_layout"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_status"
+            android:text="Item not sent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/table_layout"
+            android:layout_toEndOf="@+id/image_status"
+            android:layout_toRightOf="@+id/image_status" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_resend"
+            android:text="Resend"
+            android:layout_below="@+id/table_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

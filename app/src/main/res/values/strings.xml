@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EcomKt</string>
+
+    <!-- Error Strings -->
+    <string name="error_check_internet_connection">Check Internet Connection</string>
+    <string name="error_oops_error_occured">Oops!! An Error Occurred</string>
+
+    <!-- Permission -->
+    <string name="enable_gps">Enable GPS</string>
+    <string name="required_for_this_app">Required for this app</string>
+    <string name="enable_now">Enable Now</string>
+
+    <string name="take_photo">Choose Photo</string>
+    <string name="label_community_name">Community Name</string>
+    <string name="label_geographical">Geographical District</string>
+    <string name="label_accessibility">Accessibility</string>
+    <string name="label_distance_ecom">Distance to Ecom</string>
+    <string name="label_license_date">License Date</string>
+    <string name="label_connected_ecg">Connected to ECG</string>
+    <string name="label_longitude">Longitude</string>
+    <string name="label_latitude">Latitude</string>
+    <string name="button_submit_form">Submit</string>
+    <string name="location_button">Get Location</string>
+    <string name="action_gallery">Choose from Gallery</string>
+    <string name="action_camera">Take Photo</string>
+    <string name="image_loaded">Image has been loaded</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toast_permission">Please accept Permissions</string>
+    <string name="no_data">No Data</string>
+</resources>
